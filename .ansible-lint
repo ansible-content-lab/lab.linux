@@ -1,0 +1,12 @@
+---
+profile: basic
+quiet: false
+verbosity: 1
+
+exclude_paths:
+  - changelogs
+  - .vscode
+  - env
+  - inventory
+
+offline: true
