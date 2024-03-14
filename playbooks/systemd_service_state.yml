@@ -1,0 +1,8 @@
+---
+- name: Playbook to change a systemd state
+  hosts: all
+  tasks:
+    - name: Enable a systemd service
+      ansible.builtin.systemd_service:
+        state: "{{ state }}"
+        name: "{{ service_name }}"
