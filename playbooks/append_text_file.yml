@@ -8,4 +8,4 @@
         create: true
         prepend_newline:  "{{ prepend_newline | default(False) }}"
         append_newline: "{{ append_newline | default(True) }}"
-        text: "{{ text }}"
+        block: "{{ text }}"
