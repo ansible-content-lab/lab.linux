@@ -1,0 +1,8 @@
+---
+- name: Playbook to append text to a file
+  hosts: all
+  tasks:
+    - name: Insert a block of text into a filer
+      ansible.builtin.blockinfile:
+        path: "{{ file_path }}"
+        block: "{{ text }}"
