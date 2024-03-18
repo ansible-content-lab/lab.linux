@@ -1,0 +1,8 @@
+---
+- name: Playbook upgrade packages on Linux instances
+  hosts: all
+  tasks:
+    - name: Upgrade all packages
+      ansible.builtin.package:
+        name: "*"
+        state: latest
